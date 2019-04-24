@@ -76,8 +76,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\Wwise\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SFLib.lib;McDSPLimiterFX.lib;McDSPFutzBoxFX.lib;iZTrashMultibandDistortionFX.lib;iZTrashFiltersFX.lib;iZTrashDynamicsFX.lib;iZTrashDistortionFX.lib;iZTrashDelayFX.lib;iZTrashBoxModelerFX.lib;iZHybridReverbFX.lib;AuroHeadphoneFX.lib;ASIOSourceSink.lib;AkVorbisDecoder.lib;AkTremoloFX.lib;AkToneSource.lib;AkTimeStretchFX.lib;AkSynthOneSource.lib;AkStreamMgr.lib;AkStereoDelayFX.lib;AkSpatialAudio.lib;AkSoundSeedWooshSource.lib;AkSoundSeedWindSource.lib;AkSoundSeedImpactFX.lib;AkSoundEngine.lib;AkSineSource.lib;AkSilenceSource.lib;AkRoomVerbFX.lib;AkReflectFX.lib;AkRecorderFX.lib;AkPitchShifterFX.lib;AkPeakLimiterFX.lib;AkParametricEQFX.lib;AkOpusDecoder.lib;AkMusicEngine.lib;AkMotionSourceSource.lib;AkMotionSink.lib;AkMotionGeneratorSource.lib;AkMeterFX.lib;AkMemoryMgr.lib;AkMatrixReverbFX.lib;AkHarmonizerFX.lib;AkGuitarDistortionFX.lib;AkGainFX.lib;AkFlangerFX.lib;AkExpanderFX.lib;AkDelayFX.lib;AkCompressorFX.lib;AkAutobahn.lib;AkAudioInputSource.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -85,8 +89,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\Wwise\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SFLib.lib;McDSPLimiterFX.lib;McDSPFutzBoxFX.lib;iZTrashMultibandDistortionFX.lib;iZTrashFiltersFX.lib;iZTrashDynamicsFX.lib;iZTrashDistortionFX.lib;iZTrashDelayFX.lib;iZTrashBoxModelerFX.lib;iZHybridReverbFX.lib;AuroHeadphoneFX.lib;ASIOSourceSink.lib;AkVorbisDecoder.lib;AkTremoloFX.lib;AkToneSource.lib;AkTimeStretchFX.lib;AkSynthOneSource.lib;AkStreamMgr.lib;AkStereoDelayFX.lib;AkSpatialAudio.lib;AkSoundSeedWooshSource.lib;AkSoundSeedWindSource.lib;AkSoundSeedImpactFX.lib;AkSoundEngine.lib;AkSineSource.lib;AkSilenceSource.lib;AkRoomVerbFX.lib;AkReflectFX.lib;AkRecorderFX.lib;AkPitchShifterFX.lib;AkPeakLimiterFX.lib;AkParametricEQFX.lib;AkOpusDecoder.lib;AkMusicEngine.lib;AkMotionSourceSource.lib;AkMotionSink.lib;AkMotionGeneratorSource.lib;AkMeterFX.lib;AkMemoryMgr.lib;AkMatrixReverbFX.lib;AkHarmonizerFX.lib;AkGuitarDistortionFX.lib;AkGainFX.lib;AkFlangerFX.lib;AkExpanderFX.lib;AkDelayFX.lib;AkCompressorFX.lib;AkAutobahn.lib;AkAudioInputSource.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -96,11 +104,13 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\Wwise\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SFLib.lib;McDSPLimiterFX.lib;McDSPFutzBoxFX.lib;iZTrashMultibandDistortionFX.lib;iZTrashFiltersFX.lib;iZTrashDynamicsFX.lib;iZTrashDistortionFX.lib;iZTrashDelayFX.lib;iZTrashBoxModelerFX.lib;iZHybridReverbFX.lib;AuroHeadphoneFX.lib;ASIOSourceSink.lib;AkVorbisDecoder.lib;AkTremoloFX.lib;AkToneSource.lib;AkTimeStretchFX.lib;AkSynthOneSource.lib;AkStreamMgr.lib;AkStereoDelayFX.lib;AkSpatialAudio.lib;AkSoundSeedWooshSource.lib;AkSoundSeedWindSource.lib;AkSoundSeedImpactFX.lib;AkSoundEngine.lib;AkSineSource.lib;AkSilenceSource.lib;AkRoomVerbFX.lib;AkReflectFX.lib;AkRecorderFX.lib;AkPitchShifterFX.lib;AkPeakLimiterFX.lib;AkParametricEQFX.lib;AkOpusDecoder.lib;AkMusicEngine.lib;AkMotionSourceSource.lib;AkMotionSink.lib;AkMotionGeneratorSource.lib;AkMeterFX.lib;AkMemoryMgr.lib;AkMatrixReverbFX.lib;AkHarmonizerFX.lib;AkGuitarDistortionFX.lib;AkGainFX.lib;AkFlangerFX.lib;AkExpanderFX.lib;AkDelayFX.lib;AkCompressorFX.lib;AkAutobahn.lib;AkAudioInputSource.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -111,11 +121,13 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\Wwise\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SFLib.lib;McDSPLimiterFX.lib;McDSPFutzBoxFX.lib;iZTrashMultibandDistortionFX.lib;iZTrashFiltersFX.lib;iZTrashDynamicsFX.lib;iZTrashDistortionFX.lib;iZTrashDelayFX.lib;iZTrashBoxModelerFX.lib;iZHybridReverbFX.lib;AuroHeadphoneFX.lib;ASIOSourceSink.lib;AkVorbisDecoder.lib;AkTremoloFX.lib;AkToneSource.lib;AkTimeStretchFX.lib;AkSynthOneSource.lib;AkStreamMgr.lib;AkStereoDelayFX.lib;AkSpatialAudio.lib;AkSoundSeedWooshSource.lib;AkSoundSeedWindSource.lib;AkSoundSeedImpactFX.lib;AkSoundEngine.lib;AkSineSource.lib;AkSilenceSource.lib;AkRoomVerbFX.lib;AkReflectFX.lib;AkRecorderFX.lib;AkPitchShifterFX.lib;AkPeakLimiterFX.lib;AkParametricEQFX.lib;AkOpusDecoder.lib;AkMusicEngine.lib;AkMotionSourceSource.lib;AkMotionSink.lib;AkMotionGeneratorSource.lib;AkMeterFX.lib;AkMemoryMgr.lib;AkMatrixReverbFX.lib;AkHarmonizerFX.lib;AkGuitarDistortionFX.lib;AkGainFX.lib;AkFlangerFX.lib;AkExpanderFX.lib;AkDelayFX.lib;AkCompressorFX.lib;AkAutobahn.lib;AkAudioInputSource.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
