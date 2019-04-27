@@ -147,9 +147,59 @@
     <ClInclude Include="Win32\AkFileHelpers.h" />
     <ClInclude Include="Win32\AkFilePackageLowLevelIOBlocking.h" />
     <ClInclude Include="Win32\stdafx.h" />
+    <ClInclude Include="Wwise_IDs.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Common\AkFilePackageLowLevelIO.inl" />
+    <None Include="SoundBanks\BGM.bnk" />
+    <None Include="SoundBanks\Bus3d_Demo.bnk" />
+    <None Include="SoundBanks\Car.bnk" />
+    <None Include="SoundBanks\Dirt.bnk" />
+    <None Include="SoundBanks\English(US)\DynamicDialogue.bnk" />
+    <None Include="SoundBanks\English(US)\Human.bnk" />
+    <None Include="SoundBanks\English(US)\TestRSX.bnk" />
+    <None Include="SoundBanks\ExternalSources.bnk" />
+    <None Include="SoundBanks\ExternalSources.pck" />
+    <None Include="SoundBanks\French(Canada)\DynamicDialogue.bnk" />
+    <None Include="SoundBanks\French(Canada)\Human.bnk" />
+    <None Include="SoundBanks\French(Canada)\TestRSX.bnk" />
+    <None Include="SoundBanks\Gravel.bnk" />
+    <None Include="SoundBanks\Init.bnk" />
+    <None Include="SoundBanks\InteractiveMusic.bnk" />
+    <None Include="SoundBanks\MarkerTest.bnk" />
+    <None Include="SoundBanks\Metal.bnk" />
+    <None Include="SoundBanks\Metronome.bnk" />
+    <None Include="SoundBanks\Microphone.bnk" />
+    <None Include="SoundBanks\MusicCallbacks.bnk" />
+    <None Include="SoundBanks\Positioning_Demo.bnk" />
+    <None Include="SoundBanks\Wood.bnk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SoundBanks\BGM.txt" />
+    <Text Include="SoundBanks\Bus3d_Demo.txt" />
+    <Text Include="SoundBanks\Car.txt" />
+    <Text Include="SoundBanks\Dirt.txt" />
+    <Text Include="SoundBanks\English(US)\DynamicDialogue.txt" />
+    <Text Include="SoundBanks\English(US)\Human.txt" />
+    <Text Include="SoundBanks\English(US)\TestRSX.txt" />
+    <Text Include="SoundBanks\ExternalSources.txt" />
+    <Text Include="SoundBanks\French(Canada)\DynamicDialogue.txt" />
+    <Text Include="SoundBanks\French(Canada)\Human.txt" />
+    <Text Include="SoundBanks\French(Canada)\TestRSX.txt" />
+    <Text Include="SoundBanks\Gravel.txt" />
+    <Text Include="SoundBanks\Init.txt" />
+    <Text Include="SoundBanks\InteractiveMusic.txt" />
+    <Text Include="SoundBanks\MarkerTest.txt" />
+    <Text Include="SoundBanks\Metal.txt" />
+    <Text Include="SoundBanks\Metronome.txt" />
+    <Text Include="SoundBanks\Microphone.txt" />
+    <Text Include="SoundBanks\MusicCallbacks.txt" />
+    <Text Include="SoundBanks\Positioning_Demo.txt" />
+    <Text Include="SoundBanks\Wood.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="SoundBanks\PluginInfo.xml" />
+    <Xml Include="SoundBanks\SoundbanksInfo.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
