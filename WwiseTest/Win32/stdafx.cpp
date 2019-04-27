@@ -13,10 +13,6 @@ written agreement between you and Audiokinetic Inc.
   Copyright (c) 2006-2019 Audiokinetic Inc.
 *******************************************************************************/
 
-// stdafx.cpp : source file that includes just the standard includes
-// AkAudioLib.pch will be the pre-compiled header
-// stdafx.obj will contain the pre-compiled type information
-
 #include "stdafx.h"
 
 // TODO: reference any additional headers you need in STDAFX.H

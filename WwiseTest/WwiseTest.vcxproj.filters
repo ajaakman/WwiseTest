@@ -18,50 +18,50 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AkDefaultIOHookBlocking.cpp">
+    <ClCompile Include="Win32\AkDefaultIOHookBlocking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AkFilePackage.cpp">
+    <ClCompile Include="Win32\stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AkFilePackageLUT.cpp">
+    <ClCompile Include="Common\AkMultipleFileLocation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AkMultipleFileLocation.cpp">
+    <ClCompile Include="Common\AkFilePackage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="Common\AkFilePackageLUT.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AkDefaultIOHookBlocking.h">
+    <ClInclude Include="Win32\AkFilePackageLowLevelIOBlocking.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="akfilehelpers.h">
+    <ClInclude Include="Win32\AkDefaultIOHookBlocking.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AkFilePackage.h">
+    <ClInclude Include="Win32\AkFileHelpers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AkFilePackageLowLevelIO.h">
+    <ClInclude Include="Win32\stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AkFilePackageLowLevelIOBlocking.h">
+    <ClInclude Include="Common\AkMultipleFileLocation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AkFilePackageLUT.h">
+    <ClInclude Include="Common\AkFilePackageLowLevelIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AkMultipleFileLocation.h">
+    <ClInclude Include="Common\AkFilePackage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stdafx.h">
+    <ClInclude Include="Common\AkFilePackageLUT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AkFilePackageLowLevelIO.inl">
+    <None Include="Common\AkFilePackageLowLevelIO.inl">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>

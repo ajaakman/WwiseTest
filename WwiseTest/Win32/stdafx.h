@@ -13,17 +13,16 @@ written agreement between you and Audiokinetic Inc.
   Copyright (c) 2006-2019 Audiokinetic Inc.
 *******************************************************************************/
 
-// stdafx.h : include file for standard system include files,
-// or project specific include files that are used frequently, but
-// are changed infrequently
-//
+#pragma once
 
-#ifndef _AKSTREAMMGR_STDAFX_H_
-#define _AKSTREAMMGR_STDAFX_H_
+#ifdef AK_WIN
+	#ifndef _WIN32_WINNT		// Allow use of features specific to Windows NT 4 or later.
+	#define _WIN32_WINNT 0x0501	// Change this to the appropriate value to target Windows 98 and Windows 2000 or later.
+	#endif
 
-#include <AK/SoundEngine/Common/AkTypes.h>
-#include <AK/Tools/Common/AkAssert.h>
+	#define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
+	// Windows Header Files:
+	#include <windows.h>
+#endif
 
-#endif //_AKSTREAMMGR_STDAFX_H_
-
-
+// TODO: reference additional headers your program requires here

@@ -131,25 +131,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AkDefaultIOHookBlocking.cpp" />
-    <ClCompile Include="AkFilePackage.cpp" />
-    <ClCompile Include="AkFilePackageLUT.cpp" />
-    <ClCompile Include="AkMultipleFileLocation.cpp" />
+    <ClCompile Include="Common\AkFilePackage.cpp" />
+    <ClCompile Include="Common\AkFilePackageLUT.cpp" />
+    <ClCompile Include="Common\AkMultipleFileLocation.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Win32\AkDefaultIOHookBlocking.cpp" />
+    <ClCompile Include="Win32\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AkDefaultIOHookBlocking.h" />
-    <ClInclude Include="akfilehelpers.h" />
-    <ClInclude Include="AkFilePackage.h" />
-    <ClInclude Include="AkFilePackageLowLevelIO.h" />
-    <ClInclude Include="AkFilePackageLowLevelIOBlocking.h" />
-    <ClInclude Include="AkFilePackageLUT.h" />
-    <ClInclude Include="AkMultipleFileLocation.h" />
-    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Common\AkFilePackage.h" />
+    <ClInclude Include="Common\AkFilePackageLowLevelIO.h" />
+    <ClInclude Include="Common\AkFilePackageLUT.h" />
+    <ClInclude Include="Common\AkMultipleFileLocation.h" />
+    <ClInclude Include="Win32\AkDefaultIOHookBlocking.h" />
+    <ClInclude Include="Win32\AkFileHelpers.h" />
+    <ClInclude Include="Win32\AkFilePackageLowLevelIOBlocking.h" />
+    <ClInclude Include="Win32\stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AkFilePackageLowLevelIO.inl" />
+    <None Include="Common\AkFilePackageLowLevelIO.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
