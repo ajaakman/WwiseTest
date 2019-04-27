@@ -158,6 +158,46 @@ bool InitSoundEngine()
 	return true;
 }
 
+void TermSoundEngine()
+{
+#ifndef AK_OPTIMIZED
+	//
+	// Terminate Communication Services
+	//
+	AK::Comm::Term();
+#endif // AK_OPTIMIZED
+
+	//
+	// Terminate the music engine
+	//
+
+	AK::MusicEngine::Term();
+
+	//
+	// Terminate the sound engine
+	//
+
+	AK::SoundEngine::Term();
+
+	// Terminate the streaming device and streaming manager
+
+	// CAkFilePackageLowLevelIOBlocking::Term() destroys its associated streaming device 
+	// that lives in the Stream Manager, and unregisters itself as the File Location Resolver.
+	g_lowLevelIO.Term();
+
+	if (AK::IAkStreamMgr::Get())
+		AK::IAkStreamMgr::Get()->Destroy();
+
+	// Terminate the Memory Manager
+	AK::MemoryMgr::Term();
+}
+
+void ProcessAudio()
+{
+	// Process bank requests, events, positions, RTPC, etc.
+	AK::SoundEngine::RenderAudio();
+}
+
 int main()
 {
 	cout << "Wwise Version: "<< AK_WWISESDK_VERSION_MAJOR << "." << AK_WWISESDK_VERSION_MINOR << "." << AK_WWISESDK_VERSION_SUBMINOR << "." << AK_WWISESDK_VERSION_BUILD << endl;
@@ -167,7 +207,13 @@ int main()
 
 	cout << "Wwise Initialized!!!\n";
 
-	cin.get();
+	/*while (true)
+	{
+		ProcessAudio();
+	}*/
+
+	std::cin.get();
+	TermSoundEngine();
 
 	::WSACleanup();
 }
