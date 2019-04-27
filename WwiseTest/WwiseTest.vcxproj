@@ -76,7 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\Wwise\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -89,7 +89,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\Wwise\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -104,7 +104,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -121,7 +121,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include/Win32;$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies/Wwise/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -131,7 +131,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AkDefaultIOHookBlocking.cpp" />
+    <ClCompile Include="AkFilePackage.cpp" />
+    <ClCompile Include="AkFilePackageLUT.cpp" />
+    <ClCompile Include="AkMultipleFileLocation.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AkDefaultIOHookBlocking.h" />
+    <ClInclude Include="akfilehelpers.h" />
+    <ClInclude Include="AkFilePackage.h" />
+    <ClInclude Include="AkFilePackageLowLevelIO.h" />
+    <ClInclude Include="AkFilePackageLowLevelIOBlocking.h" />
+    <ClInclude Include="AkFilePackageLUT.h" />
+    <ClInclude Include="AkMultipleFileLocation.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AkFilePackageLowLevelIO.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

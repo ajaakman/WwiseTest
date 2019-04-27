@@ -7,14 +7,14 @@
 #include <AK/SoundEngine/Common/AkModule.h>                     // Default memory and stream managers
 #include <AK/SoundEngine/Common/IAkStreamMgr.h>                 // Streaming Manager
 #include <AK/Tools/Common/AkPlatformFuncs.h>                    // Thread defines
-#include <AkFilePackageLowLevelIOBlocking.h>                    // Sample low-level I/O implementation
+#include "AkFilePackageLowLevelIOBlocking.h"                    // Sample low-level I/O implementation
 #include <AK/SoundEngine/Common/AkSoundEngine.h>                // Sound engine
 #include <AK/MusicEngine/Common/AkMusicEngine.h>                // Music Engine
 #ifndef AK_OPTIMIZED
 #include <AK/Comm/AkCommunication.h>
 #endif // AK_OPTIMIZED
 
-//CAkFilePackageLowLevelIOBlocking g_lowLevelIO;
+CAkFilePackageLowLevelIOBlocking g_lowLevelIO;
 
 /////////////////////////////////////////////////////////////////////////////////
 // Custom alloc/free functions. These are declared as "extern" in AkMemoryMgr.h
@@ -103,17 +103,17 @@ bool InitSoundEngine()
 
 	// CAkFilePackageLowLevelIOBlocking::Init() creates a streaming device
 	// in the Stream Manager, and registers itself as the File Location Resolver.
-	//if (g_lowLevelIO.Init(deviceSettings) != AK_Success)
-	//{
-	//	assert(!"Could not create the streaming device and Low-Level I/O system");
-	//	return false;
-	//}
+	if (g_lowLevelIO.Init(deviceSettings) != AK_Success)
+	{
+		assert(!"Could not create the streaming device and Low-Level I/O system");
+		return false;
+	}
 
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	//
 	// Create the Sound Engine
 	// Using default initialization parameters
 	//
+
 	AkInitSettings initSettings;
 	AkPlatformInitSettings platformInitSettings;
 	AK::SoundEngine::GetDefaultInitSettings(initSettings);
